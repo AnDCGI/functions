@@ -1,2 +1,2 @@
 # mayaSnippets
-# These Are Some Usefull Maya Scripts To Make Everyday Tedious Work Effortless
+These Are Some Usefull Maya Scripts To Make Everyday Tedious Work Effortless
