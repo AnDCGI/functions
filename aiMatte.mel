@@ -1,0 +1,6 @@
+string $sel[] = `ls -ni -typ "mesh" -typ "nurbsSurface" -typ "subdiv"`;
+int $num = size($sel);
+for ($i=0; $i<$num; ++$i) {
+	string $selAttr = $sel[$i]+".aiMatte";
+	setAttr $selAttr 1;
+}
