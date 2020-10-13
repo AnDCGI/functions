@@ -1,0 +1,4 @@
+currentUnit -time pal;
+playbackOptions -ps 0;
+playbackOptions -e -min 1 -max 500;
+playButtonStart;
