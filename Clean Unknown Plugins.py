@@ -1,4 +1,5 @@
 # Clean Unknown Plugins
+# Copyright ©  2020  AnD CGI
 import maya.cmds as cmds
 cmds.delete(cmds.ls(type="unknown"))
 plg_ls = cmds.unknownPlugin(q=True, l=True)
