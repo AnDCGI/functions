@@ -17,7 +17,7 @@ I am making these scripts to accelerate my workflow and hopefully other people w
 
 Copyright ©  2020  AnD CGI
 
-Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 
+Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License. 
 
 ![https://www.gnu.org/graphics/gplv3-or-later-sm.png](https://www.gnu.org/graphics/gplv3-or-later-sm.png)
 
