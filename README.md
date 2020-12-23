@@ -21,5 +21,5 @@ Permission is granted to copy, distribute and/or modify this document under the 
 
 ![https://www.gnu.org/graphics/gplv3-or-later-sm.png](https://www.gnu.org/graphics/gplv3-or-later-sm.png)
 
-The scripts has <b>AnD CGI © 20<i>XX</i></b> symbol which is to remind that donations or credit aren't necessary but very appreciated! [![paypal](C:\Users\DJ_Dh\Desktop\icon_paypal.svg)](https://paypal.me/DJDhrub)
+The scripts has <b>AnD CGI © 20<i>XX</i></b> symbol which is to remind that donations or credit aren't necessary but very appreciated! [![paypal](images\icon_paypal.svg)](https://paypal.me/DJDhrub)
 
