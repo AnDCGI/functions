@@ -1,4 +1,10 @@
-# Coding=utf-8
+# Maya Broadcast FPS
+# Copyright ©  2020  AnD CGI
+# This Tool Changes The FPS Based on Selected Preset
+# Althogh Similar Option is Avilavle Inside Maya But the Timeline and Timeslider Goes into Float Values  
+# This Fixes That Also Sets the Start & End as 101 - 500 Respectively
+# Coding = utf-8
+
 # Imports Libraries
 import maya.cmds as cmds
 import maya.mel as mel
