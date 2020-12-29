@@ -1,13 +1,19 @@
-#Coding=utf-8
-#Imports Libraries
+# Dynamics Quick Selection Set
+# Copyright ©  2020  AnD CGI
+# This Tool Collects Different Types of Objects* by Searching the Whole Scene
+# User Have to Choose the Type of Object, Click Create & the Tool Will Create A Quick Selection Set
+# Every Quick Selection Set Will Have a QSS Suffix 
+# *Drop Down Options are Related to FX Only
+# Coding = utf-8
+# Imports Libraries
 import maya.cmds as cmds
 import maya.mel as mel
-#Declares Varibale
-winID_Q = 'QSS Create'
-#Check To See If Window Exists
-if cmds.window(winID_Q, exists=True):
-    cmds.deleteUI(winID_Q)
-#Defines Create Button Action   
+# Declares Variable
+winID_A = 'QSS Create'
+# Check To See If Window Exists
+if cmds.window(winID_A, exists=True):
+    cmds.deleteUI(winID_A)
+# Defines Create Button Action   
 def CreateButtonPush(*args):
     currentValue = cmds.optionMenu('Object_Type', query=True, value=True)
     if currentValue == 'Fluid Emitter':
@@ -80,14 +86,14 @@ def CreateButtonPush(*args):
         cmds.select(set)
         action = cmds.sets(name = "rigidBodyQSS", text = "gCharacterSet")
         print("Created QSS with all rigid bodies")
-#Defines Done Button Action
+# Defines Done Button Action
 def DoneButtonPush(*args):
     cmds.deleteUI( window, window=True )
-#Creates Actual Window
-window = cmds.window('winID_K',title='Quick Selection Set', resizeToFitChildren=True, sizeable=False)
-#Creates Layout
-cmds.frameLayout(label='Quick Selection Set Options', collapsable=False, mw=5, mh=5)
-cmds.text(label='AnD CGI � 2020', font='smallPlainLabelFont')
+# Creates Actual Window
+window = cmds.window('winID_A',title='FX Quick Set', resizeToFitChildren=True, sizeable=False)
+# Creates Layout
+cmds.frameLayout(label='Dynamics Quick Selection Set Options', collapsable=False, mw=5, mh=5)
+cmds.text(label='AnD CGI © 2020', font='smallPlainLabelFont')
 cmds.columnLayout()
 cmds.optionMenu('Object_Type', label='Object Type')
 cmds.menuItem(label=" ")
@@ -104,11 +110,9 @@ cmds.menuItem(label='Rigid Constraint')
 cmds.menuItem(label='Anim Constraint')
 cmds.menuItem(label='Force Field')
 cmds.menuItem(label='Nucleus')
-#Creates Gaps
-cmds.rowColumnLayout(numberOfRows=1, rowHeight=(1, 50))
-#Creates Buttons
-cmds.rowColumnLayout(numberOfColumns=2, columnWidth=[(1, 70), (2, 70)], cs=[(1, 40), (2, 15)])
+# Creates Buttons
+cmds.rowLayout(numberOfColumns=2, columnWidth2=(117,117),columnAttach=[(1, 'both', 0), (2, 'both', 0)])
 cmds.button(label='Create', command=CreateButtonPush)
 cmds.button(label='Done', command=DoneButtonPush)
-#Shows Window
+# Shows Window
 cmds.showWindow()
