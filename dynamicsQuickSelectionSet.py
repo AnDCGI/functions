@@ -5,9 +5,9 @@
 # Every Quick Selection Set Will Have a QSS Suffix 
 # *Drop Down Options are Related to FX Only
 # Coding = utf-8
+
 # Imports Libraries
 import maya.cmds as cmds
-import maya.mel as mel
 # Declares Variable
 winID_A = 'QSS Create'
 # Check To See If Window Exists
