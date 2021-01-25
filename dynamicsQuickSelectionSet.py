@@ -17,117 +17,117 @@ if cmds.window(winID_A, exists=True):
 def CreateButtonPush(*args):
     currentValue = cmds.optionMenu('Object_Type', query=True, value=True)
     if currentValue == 'Fluid Emitter':
-        set = cmds.ls(type="fluidEmitter")
+        set = cmds.ls(type='fluidEmitter')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "fluidEmitterQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Fluid Emitters")
+            action = cmds.sets(name = 'fluidEmitterQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Fluid Emitters')
         else:
-            print("No Fluid Emitter in Scene")
+            print('No Fluid Emitter in Scene')
     elif currentValue == 'nParticle/Particle Emitter':
-        set=cmds.ls(exactType="pointEmitter")
+        set=cmds.ls(exactType='pointEmitter')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "particleEmitterQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Particle Emitters")
+            action = cmds.sets(name = 'particleEmitterQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Particle Emitters')
         else:
-            print("No Particle Emitter in Scene")
+            print('No Particle Emitter in Scene')
     elif currentValue == 'nRigid':
-        set = cmds.ls(type="nRigid")
+        set = cmds.ls(type='nRigid')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "nRigidQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all nRigids")
+            action = cmds.sets(name = 'nRigidQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all nRigids')
         else:
-            print("No nRigid in Scene")
+            print('No nRigid in Scene')
     elif currentValue == 'Fluid Container':
-        set = cmds.ls(type="fluidShape")
+        set = cmds.ls(type='fluidShape')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "fluidShapeQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Fluid Containers")
+            action = cmds.sets(name = 'fluidShapeQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Fluid Containers')
         else:
-            print("No Fluid Container in Scene")
+            print('No Fluid Container in Scene')
     elif currentValue == 'Nucleus':
-        set = cmds.ls(type="nucleus")
+        set = cmds.ls(type='nucleus')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "nucleusQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Nucleus")
+            action = cmds.sets(name = 'nucleusQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Nucleus')
         else:
-            print("No Nucleus in Scene")
+            print('No Nucleus in Scene')
     elif currentValue == 'nParticle':
-        set = cmds.ls(type="nParticle")
+        set = cmds.ls(type='nParticle')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "nParticleQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all nParticles")
+            action = cmds.sets(name = 'nParticleQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all nParticles')
         else:
-            print("No nParticle in Scene")
+            print('No nParticle in Scene')
     elif currentValue == 'Force Field':
-        set = cmds.ls(type="field")
+        set = cmds.ls(type='field')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "forceFieldQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Force Fields")
+            action = cmds.sets(name = 'forceFieldQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Force Fields')
         else:
-            print("No Force Field in Scene")
+            print('No Force Field in Scene')
     elif currentValue == 'Legacy Particle':
-        set=cmds.ls(exactType="particle")
+        set=cmds.ls(exactType='particle')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "ParticleQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Particles")
+            action = cmds.sets(name = 'ParticleQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Particles')
         else:
-            print("No Particle in Scene")
+            print('No Particle in Scene')
     elif currentValue == 'nCloth':
-        set=cmds.ls(exactType="nCloth")
+        set=cmds.ls(exactType='nCloth')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "nClothQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all nClothes")
+            action = cmds.sets(name = 'nClothQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all nClothes')
         else:
-            print("No nCloth in Scene")
+            print('No nCloth in Scene')
     elif currentValue == 'Dynamic Constraint':
-        set=cmds.ls(exactType="dynamicConstraint")
+        set=cmds.ls(exactType='dynamicConstraint')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "dynamicConstraintQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Dynamic Constraints")
+            action = cmds.sets(name = 'dynamicConstraintQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Dynamic Constraints')
         else:
-            print("No Dynamic Constraint in Scene")
+            print('No Dynamic Constraint in Scene')
     elif currentValue == 'Rigid Body':
-        set=cmds.ls(exactType="rigidBody")
+        set=cmds.ls(exactType='rigidBody')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "rigidBodyQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Rigid Bodies")
+            action = cmds.sets(name = 'rigidBodyQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Rigid Bodies')
         else:
-            print("No Rigid Body in Scene")
+            print('No Rigid Body in Scene')
     elif currentValue == 'Rigid Constraint':
-        set=cmds.ls(exactType="rigidConstraint")
+        set=cmds.ls(exactType='rigidConstraint')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "rigidConstraintQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Rigid Constraints")
+            action = cmds.sets(name = 'rigidConstraintQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Rigid Constraints')
         else:
-            print("No Rigid Constraint in Scene")
+            print('No Rigid Constraint in Scene')
     elif currentValue == 'Anim Constraint':
-        set=cmds.ls(type="constraint")
+        set=cmds.ls(type='constraint')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "constraintQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Anim Constraints")
+            action = cmds.sets(name = 'constraintQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Anim Constraints')
         else:
-            print("No Anim Constraint in Scene")
+            print('No Anim Constraint in Scene')
     elif currentValue == 'Rigid Body':
-        set=cmds.ls(type="rigidBody")
+        set=cmds.ls(type='rigidBody')
         if bool(set):
             cmds.select(set)    
-            action = cmds.sets(name = "rigidBodyQSS", text = "gCharacterSet")
-            print("Created Quick Selection Set with all Rigid bodies")
+            action = cmds.sets(name = 'rigidBodyQSS', text = 'gCharacterSet')
+            print('Created Quick Selection Set with all Rigid bodies')
         else:
-            print("No Rigid Body in Scene")
+            print('No Rigid Body in Scene')
 # Defines Done Button Action
 def DoneButtonPush(*args):
     cmds.deleteUI( window, window=True )
@@ -138,7 +138,7 @@ cmds.frameLayout(label='Dynamics Quick Selection Set Options', collapsable=False
 cmds.text(label='AnD CGI © 2020', font='smallPlainLabelFont')
 cmds.columnLayout()
 cmds.optionMenu('Object_Type', label='Object Type')
-cmds.menuItem(label=" ")
+cmds.menuItem(label=' ')
 cmds.menuItem(label='Fluid Emitter')
 cmds.menuItem(label='nParticle/Particle Emitter')
 cmds.menuItem(label='Fluid Container')
