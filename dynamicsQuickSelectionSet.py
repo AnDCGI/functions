@@ -138,7 +138,7 @@ cmds.frameLayout(label='Dynamics Quick Selection Set Options', collapsable=False
 cmds.text(label='AnD CGI © 2020', font='smallPlainLabelFont')
 cmds.columnLayout()
 cmds.optionMenu('Object_Type', label='Object Type')
-cmds.menuItem(label=' ')
+cmds.menuItem(label=" ")
 cmds.menuItem(label='Fluid Emitter')
 cmds.menuItem(label='nParticle/Particle Emitter')
 cmds.menuItem(label='Fluid Container')
