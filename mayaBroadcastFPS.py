@@ -55,7 +55,7 @@ def SetButtonPush(*args):
 def DoneButtonPush(*args):
     cmds.deleteUI( window, window=True )
 # Creates Actual Window
-window = cmds.window('winID_A', title='Maya FPS Change', resizeToFitChildren=False, sizeable=False)
+window = cmds.window(winID_A, title='Maya FPS Change', resizeToFitChildren=False, sizeable=False)
 # Creates Layout
 cmds.frameLayout(label='Broadcast FPS Options', collapsable=False, mw=5, mh=5)
 cmds.text(label='AnD CGI © 2020', font='smallPlainLabelFont')
