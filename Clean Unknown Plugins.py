@@ -9,3 +9,5 @@ if plg_ls:
     for plugin in plg_ls:
         print(plugin)
         cmds.unknownPlugin(plugin, r=True)
+#Use The Bottom Line Only If You Have "_UNKNOWN_REF_NODE_"
+cmds.delete("_UNKNOWN_REF_NODE_")
