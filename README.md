@@ -26,5 +26,5 @@ Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-For A Cup Of Coffee Or Beer Feel Free
+For a cup of Coffee or Beer feel free to tip me on Paypal
 [![paypal](images/icon_paypal.svg)](https://paypal.me/DJDhrub)
