@@ -1,8 +1,9 @@
-# Copyright 2020 By Dhrubajyoti.S, And CGI
+# Copyright 2020 By Dhrubajyoti.S, AnD CGI
 # All Rights Reserved.
 # This Script Is Released Under The "GPL-3.0 License". Please See The License
-# The Scripts Has And CGI © 20XX Symbol Which Is To Remind That Donations Or Credit Aren't Necessary But Very Appreciated
+# The Scripts Has "AnD CGI © 20XX" Symbol Which Is To Remind That Donations Or Credit Aren't Necessary But Very Appreciated
 # How To Connect "https://github.com/AnDCGI"
+
 # This Batch Render Script Designed To Work As A Shelf Button Inside Maya
 # The Purpose Is To Work On As Many Shots/files As Possible In A Shift
 # After One File/shot Is Done Click On The Shelf Button That Will Add It To An Auto Generated Batch File
