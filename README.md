@@ -15,11 +15,16 @@ Some usefull <b>Maya Python Scripts</b> to <b>Speedup</b> day to day <b>Workflow
 
 I am making these scripts to accelerate my workflow and hopefully other people will find this usefull as-well. 
 
-Copyright ©  2020  AnD CGI
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License. 
+©  2020  AnD CGI This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
-![https://www.gnu.org/graphics/gplv3-or-later-sm.png](https://www.gnu.org/graphics/gplv3-or-later-sm.png)
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
-The scripts has <b>AnD CGI © 20<i>XX</i></b> symbol which is to remind that donations or credit aren't necessary but very appreciated! [![paypal](images/icon_paypal.svg)](https://paypal.me/DJDhrub)
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
+For A Cup Of Coffee Or Beer Feel Free
+[![paypal](images/icon_paypal.svg)](https://paypal.me/DJDhrub)
