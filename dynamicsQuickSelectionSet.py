@@ -1,5 +1,5 @@
+# © 2020 AnD CGI This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 # Dynamics Quick Selection Set
-# Copyright ©  2020  AnD CGI
 # This Tool Collects Different Types of Objects* by Searching the Whole Scene
 # User Have to Choose the Type of Object, Click Create & the Tool Will Create A Quick Selection Set
 # Every Quick Selection Set Will Have a QSS Suffix 
