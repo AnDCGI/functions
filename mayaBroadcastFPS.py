@@ -1,5 +1,6 @@
-# Maya Broadcast FPS
-# Copyright ©  2020  AnD CGI
+# © 2020 AnD CGI This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
+# Dynamics Quick Selection Set
 # This Tool Changes The FPS Based on Selected Preset
 # Althogh Similar Option is Avilavle Inside Maya But the Timeline and Timeslider Goes into Float Values  
 # This Fixes That Also Sets the Start & End as 101 - 500 Respectively
