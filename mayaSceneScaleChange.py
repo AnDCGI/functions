@@ -2,8 +2,9 @@
 © 2020 AnD CGI This work is licensed under a
 Creative Commons Attribution-ShareAlike 4.0 International License.
 
-Maya One Click Scene Change
-this Script Is Designed To Change Scene Scale Like For FX, Lighting Etc.
+Maya One Click Scene Scale Change
+
+This Script Is Designed To Change Scene Scale Like For FX, Lighting Etc.
 Designed To Work As A Shelf Button Inside Maya And Especially Made To Work
 With Alembic Files.
 By Default It Will Scale Everything Down To 0.1 In All Axis, User Can Later
