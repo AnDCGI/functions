@@ -20,10 +20,10 @@ FPS, Meant To Be Used On A Empty Scene
 import maya.cmds as cmds
 import maya.mel as mel
 # Declares Varibale
-winID_A = 'Set Desired FPS'
+winID = 'SetDesiredFPS'
 # Check To See If Window Exists
-if cmds.window(winID_A, exists=True):
-    cmds.deleteUI(winID_A)
+if cmds.window(winID, exists=True):
+    cmds.deleteUI(winID)
 
 
 # Defines Set Button Action
@@ -66,17 +66,12 @@ def SetButtonPush(*args):
         mel.eval('playButtonStart')
 
 
-# Defines Done Button Action
-def DoneButtonPush(*args):
-    cmds.deleteUI(window, window=True)
-
-
 # Creates Actual Window
-window = cmds.window(winID_A, title='Maya FPS Change',
-                     resizeToFitChildren=False, sizeable=False)
+window = cmds.window(winID, title='Maya FPS Switch',
+                     resizeToFitChildren=True, sizeable=False, tlb=True)
 # Creates Layout
 cmds.frameLayout(label='Broadcast FPS Options', collapsable=False, mw=5, mh=5)
-cmds.text(label='AnD CGI © 2020', font='smallPlainLabelFont')
+cmds.text(label='© 2020 AnD CGI (CC BY-SA 4.0)', font='smallPlainLabelFont')
 cmds.columnLayout()
 cmds.optionMenu('Select_FPS', label='Select FPS')
 cmds.menuItem(label=" ")
@@ -87,10 +82,11 @@ cmds.menuItem(label='NTSC 30 FPS')
 cmds.menuItem(label='Show 48 FPS')
 cmds.menuItem(label='PAL F 50 FPS')
 cmds.menuItem(label='NTSC F 60 FPS')
+cmds.setParent('..')
 # Creates Buttons
-cmds.rowLayout(numberOfColumns=2, columnWidth2=(80, 80),
-               columnAttach=[(1, 'both', 0), (2, 'both', 0)])
-cmds.button(label='Set', command=SetButtonPush)
-cmds.button(label='Done', command=DoneButtonPush)
+cmds.rowLayout(numberOfColumns=2)
+cmds.text(label='', width=46)
+cmds.button(label='Set', command=SetButtonPush, w=100)
+cmds.setParent('..')
 # Shows Window
 cmds.showWindow()
