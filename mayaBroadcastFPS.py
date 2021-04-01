@@ -1,11 +1,21 @@
-# © 2020 AnD CGI This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+'''
+© 2020 AnD CGI This work is licensed under a
+Creative Commons Attribution-ShareAlike 4.0 International License.
 
-# Dynamics Quick Selection Set
-# This Tool Changes The FPS Based on Selected Preset
-# Althogh Similar Option is Avilavle Inside Maya But the Timeline and Timeslider Goes into Float Values  
-# This Fixes That Also Sets the Start & End as 101 - 500 Respectively
+Dynamics Quick Selection Set
+
+This Dynamics Quick Selection Set Script Designed To Work As A Shelf Button
+Inside Maya Which Will Open A New Pop Up UI With All The Presets
+The Tool Changes The FPS Based On Selected Preset
+Althogh Kind Of A Similar Option Is Avilavle Inside Maya But The Timeline And
+Timeslider Goes Into Float Values, This Fixes That Also Sets The Start & End
+As 101 - 500 Respectively
+Which Can Be Changed By Changing The Values Inside The Code
+
+DISCLAIMER This Doesnt Changes Any Keyframe Nor Converts FPS, It Just Sets
+FPS, Meant To Be Used On A Empty Scene
+'''
 # Coding = utf-8
-
 # Imports Libraries
 import maya.cmds as cmds
 import maya.mel as mel
@@ -14,7 +24,9 @@ winID_A = 'Set Desired FPS'
 # Check To See If Window Exists
 if cmds.window(winID_A, exists=True):
     cmds.deleteUI(winID_A)
-# Defines Set Button Action   
+
+
+# Defines Set Button Action
 def SetButtonPush(*args):
     currentValue = cmds.optionMenu('Select_FPS', query=True, value=True)
     if currentValue == 'Game 15 FPS':
@@ -52,11 +64,16 @@ def SetButtonPush(*args):
         mel.eval('playbackOptions -ps 0')
         mel.eval('playbackOptions -e -ast 101 -min 101 -max 500 -aet 500')
         mel.eval('playButtonStart')
+
+
 # Defines Done Button Action
 def DoneButtonPush(*args):
-    cmds.deleteUI( window, window=True )
+    cmds.deleteUI(window, window=True)
+
+
 # Creates Actual Window
-window = cmds.window(winID_A, title='Maya FPS Change', resizeToFitChildren=False, sizeable=False)
+window = cmds.window(winID_A, title='Maya FPS Change',
+                     resizeToFitChildren=False, sizeable=False)
 # Creates Layout
 cmds.frameLayout(label='Broadcast FPS Options', collapsable=False, mw=5, mh=5)
 cmds.text(label='AnD CGI © 2020', font='smallPlainLabelFont')
@@ -71,7 +88,8 @@ cmds.menuItem(label='Show 48 FPS')
 cmds.menuItem(label='PAL F 50 FPS')
 cmds.menuItem(label='NTSC F 60 FPS')
 # Creates Buttons
-cmds.rowLayout(numberOfColumns=2, columnWidth2=(80,80),columnAttach=[(1, 'both', 0), (2, 'both', 0)])
+cmds.rowLayout(numberOfColumns=2, columnWidth2=(80, 80),
+               columnAttach=[(1, 'both', 0), (2, 'both', 0)])
 cmds.button(label='Set', command=SetButtonPush)
 cmds.button(label='Done', command=DoneButtonPush)
 # Shows Window
