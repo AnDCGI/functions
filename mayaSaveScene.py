@@ -14,7 +14,7 @@ import maya.cmds as cmds
 import os
 # Declares Varibale
 vNum = str(1)
-globalPath = "A:\\01prj\\AAJ\\prod\\shotpub"
+globalPath = "A:\\01prj\\XYZ\\prod\\shotpub"
 # Finding Cameras
 cameras = cmds.listCameras(p=True)
 exclude = ["persp"]
@@ -35,7 +35,7 @@ if not os.path.exists(path):
 # Creating The Total Path
 saveDir = globalPath + camPath + "\\" + "fx_scene\\"
 fileName = saveDir.replace("\\", "_")
-fileName = "aaj" + fileName[-28:] + "source" + "_v" + vNum.zfill(3) + ".ma"
+fileName = "XYZ" + fileName[-28:] + "source" + "_v" + vNum.zfill(3) + ".ma"
 # The Final File Path For New File
 mergeSDFN = saveDir + fileName
 # Version Up If File Already There
